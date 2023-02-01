@@ -1,0 +1,12 @@
+{
+  "name": "drag",
+  "version": "1.0.0",
+  "main": "./public/js/app.js",
+  "scripts": {
+    "start": "node ./public/js/app.js",
+    "sass": "sass --watch ./public/scss/style.scss:./public/css/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

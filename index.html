@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="./public/js/script.js"></script>
+        <link rel="stylesheet" href="./public/css/reset.css">
+        <link rel="stylesheet" href="./public/css/style.css">
+        <title>Drag </title>
+    </head>
+
+    <body onload="init('presentation')">
+        <div class="modal presentation active">
+            <div class="modal__head presentation__head" onclick="init('presentation')">
+                <button onclick="del('presentation')"></button>
+                <p>presentation.exe</p>
+            </div>
+            <div class="modal__content presentation__content">
+                <p>Bonjour 👋</p>
+                <p>Je m'appelle <strong>Achille</strong></p>
+                <p>🏠 J'habite Lille</p>
+                <p class="click" onclick="show('dev')">👨‍💻 Développeur web chez <span>ADTi</span></p>
+                <p class="click" onclick="show('smash')">🥊 Compétiteur sur des jeux de combat</p>
+                <p>🏀 Joueur de <strong>Basket</strong></p>
+                <p class="click" onclick="show('portfolio')">💼 Portfolio</p>
+            </div>
+        </div>
+        <div class="modal dev">
+            <div class="modal__head dev__head" onclick="init('dev')">
+                <button onclick="del('dev')"></button>
+                <p>developer.html</p>
+            </div>
+            <div class="modal__content dev__content">
+                <p>Développeur web depuis 2019</p>
+                <p>Actuellement en 3ème année spécialisé en ignénérie du web</p>
+            </div>
+        </div>
+        <div class="modal smash">
+            <div class="modal__head smash__head" onclick="init('smash')">
+                <button onclick="del('smash')"></button>
+                <p>smash.gg</p>
+            </div>
+            <div class="modal__content smash__content">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, ducimus!</p>
+            </div>
+        </div>
+        <div class="modal portfolio">
+            <div class="modal__head portfolio__head" onclick="init('portfolio')">
+                <button onclick="del('portfolio')"></button>
+                <p>/portfolio/</p>
+            </div>
+            <div class="modal__content portfolio__content">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, ducimus!</p>
+            </div>
+        </div>
+    </body>
+
+</html>

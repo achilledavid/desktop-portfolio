@@ -1,0 +1,88 @@
+* {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: rgb(34, 34, 34);
+}
+*::selection {
+  background-color: transparent;
+}
+
+body {
+  background-color: rgb(34, 34, 34);
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: rgb(239, 239, 239);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: -5px 5px 5px rgba(34, 34, 34, 0.1);
+  filter: brightness(0.6);
+}
+.modal.active {
+  display: block;
+}
+.modal__head {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+}
+.modal__head p {
+  font-size: 0.8rem;
+  color: rgba(34, 34, 34, 0.7);
+  pointer-events: none;
+}
+.modal__head button {
+  width: 10px;
+  aspect-ratio: 1;
+  background-color: rgb(242, 76, 76);
+  border: none;
+  outline: none;
+  border-radius: 100vmax;
+  cursor: pointer;
+}
+.modal__head button:hover {
+  background-color: rgb(210, 76, 76);
+}
+.modal__content {
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.presentation {
+  width: 350px;
+}
+.presentation__content {
+  padding: 0;
+}
+.presentation__content p {
+  padding: 8px 10px;
+}
+.presentation__content p.click:hover {
+  background-color: rgba(34, 34, 34, 0.057);
+  cursor: pointer;
+}
+
+.dev {
+  position: absolute;
+  top: 450px;
+  left: 860px;
+  display: none;
+  width: 700px;
+}
+
+.smash {
+  position: absolute;
+  top: 600px;
+  left: 20px;
+  width: 500px;
+}
+
+/*# sourceMappingURL=style.css.map */
